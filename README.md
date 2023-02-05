@@ -1,5 +1,7 @@
 # tailwind-from-scratch
 
+> This project is based on the course Tailwind from scratch by Brad Traversy (https://github.com/bradtraversy/tailwind-course-projects)
+
 ## project 01
 
 ### tailwind basic classes
@@ -11,3 +13,7 @@
 ## project 03
 
 ### basic project with tailwind and postcss
+
+## project 04
+
+### email subscription
