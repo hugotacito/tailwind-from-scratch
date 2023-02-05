@@ -21,3 +21,11 @@
 ## project 05
 
 ### pricing cards
+
+## project 06
+
+### products modal
+
+## project 07
+
+### image gallery
