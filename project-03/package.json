@@ -1,14 +1,19 @@
 {
   "name": "tailwind-from-scratch",
   "version": "1.0.0",
-  "description": "## project 01",
+  "description": "## project 03",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx webpack serve",
+    "build": "npx webpack"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",
