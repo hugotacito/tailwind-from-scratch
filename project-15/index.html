@@ -36,34 +36,46 @@
     </section>
     <section
       id="form"
-      class="flex flex-col justify-center p-16 mx-auto items-center space-y-6 sm:flex-row sm:space-x-16 lg:p-48"
+      class="flex flex-col justify-center p-16 mx-auto items-center space-y-6 sm:flex-row sm:space-x-16 lg:p-24"
     >
       <div
-        class="flex flex-col items-start justify-center space-y-6 w-full sm:w-auto"
+        class="flex flex-col items-start justify-center space-y-6 w-full sm:max-w-xs"
       >
         <div class="text-4xl flex justify-center space-x-6">
           <i class="fa-solid fa-lock text-gray-400"></i>
           <h1 class="font-bold">Login IFRN</h1>
         </div>
         <form class="flex flex-col w-full">
-          <label for="user" class="text-sm">Usuário:</label>
+          <label for="senha" class="text-xs">Usuário:</label>
           <input
-            type="text"
-            name="user"
+            type="password"
+            name="senha"
             class="rounded-md border-2 border-gray-300 p-2 focus:outline-green-500"
           />
-          <label for="user" class="text-sm mt-3">Senha:</label>
-          <input
-            type="text"
-            name="user"
-            class="rounded-md border-2 border-gray-300 p-2 focus:outline-green-500"
-          />
+          <label for="user" class="text-xs mt-3">Senha:</label>
+          <div class="flex space-x-0 w-full">
+            <input
+              type="text"
+              name="user"
+              class="w-full rounded-md p-2 border-2 rounded-r-none border-r-0 border-gray-300 focus:outline-green-500"
+            />
+            <button
+              class="rounded-md rounded-l-none p-2 border-2 border-gray-300"
+              type="button"
+              role="button"
+              id="view-password"
+              title="Exibir a senha"
+            >
+              <span class="fa fa-eye fa-fw text-xs" aria-hidden="true"></span>
+              <span class="sr-only">Exibir a senha</span>
+            </button>
+          </div>
           <button
-            class="bg-green-600 text-white rounded-full text-lg p-3 mt-8 hover:bg-green-800 hover:shadow-md"
+            class="bg-green-600 text-white rounded-full text-md p-3 mt-8 hover:bg-green-800 hover:shadow-md"
           >
             Acessar
           </button>
-          <a href="#" class="text-right text-green-600 text-sm mt-2">
+          <a href="#" class="text-right text-green-600 text-xs mt-2">
             Esqueceu ou deseja alterar sua senha?
           </a>
         </form>
@@ -75,12 +87,14 @@
         <div class="flex w-full justify-center">
           <a
             href="#"
-            class="w-auto bg-gray-100 rounded-full p-3 flex flex-row space-x-2 duration-300 hover:bg-gray-300 hover:shadow-lg group"
+            class="w-auto bg-gray-100 rounded-full p-2 px-4 flex flex-row space-x-2 duration-300 hover:bg-gray-300 hover:shadow-lg group"
           >
-            <span class="text-blue-700 font-bold group-hover:text-blue-400"
-              >Entrar com</span
+            <span
+              class="text-blue-700 text-sm font-bold group-hover:text-blue-400"
             >
-            <span><img src="images/logo-govbr.png" alt="" class="w-16" /></span>
+              Entrar com
+            </span>
+            <span><img src="images/logo-govbr.png" alt="" class="w-12" /></span>
           </a>
         </div>
       </div>
